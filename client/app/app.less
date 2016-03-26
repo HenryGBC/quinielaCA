@@ -1,5 +1,6 @@
 @import '../bower_components/bootstrap/less/bootstrap.less';
 @import '../bower_components/font-awesome/less/font-awesome.less';
+@import '../bower_components/3l/3L/3L.less';
 
 @icon-font-path: '../bower_components/bootstrap/fonts/';
 @fa-font-path: '../bower_components/font-awesome/fonts';
@@ -8,6 +9,14 @@
  * App-wide Styles
  */
 
+ @font-face {
+   font-family: 'dosis';
+   src: url('../assets/fonts/Dosis-Regular.otf');
+ }
+
+ body{
+   font-family: 'dosis';
+ }
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -15,13 +24,16 @@
   padding: 0.2em 0;
 }
 
-.navbar-defaul{
+.navbar-default{
   margin-bottom: 0px !important;
 }
+
+
 
 /* inject:less */
 @import 'admin/admin';
 @import 'main/main';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
+@import '../components/navbar/navbar';
 /* endinject */

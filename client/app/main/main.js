@@ -6,5 +6,7 @@ angular.module('quinielaCaApp')
       .state('main', {
         url: '/',
         template: '<main></main>'
+
       });
+
   });
