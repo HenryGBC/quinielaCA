@@ -17,8 +17,9 @@ angular.module('quinielaCaApp')
           var referrer = $state.params.referrer ||
                           $state.current.referrer ||
                           'main';
+          console.log(referrer);
           Auth.logout();
-          $state.go(referrer);
+          $state.go('main');
         }
       })
       .state('signup', {

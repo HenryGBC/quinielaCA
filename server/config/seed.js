@@ -6,16 +6,54 @@
 'use strict';
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
+import Quiniela from '../api/quiniela/quiniela.model';
+
+
+Quiniela.find({}).remove()
+  .then(() => {
+    Quiniela.create({
+      name: 'Quiniela pentasss Campeon',
+      info: 'Esta quiniela es parte de bla bla',
+      admin: {
+        email: 'henry.bravo89@gmail.com',
+        name: 'Henry'
+      },
+      users: [{
+            email: 'henry.bravo89@gmail.com',
+            name: 'Henry'
+          },
+          {
+            email: 'emai@email',
+            name: 'Jose'
+          }]
+    },
+    {
+      name: 'Quiniela Unetense',
+      info: 'Esta quiniela es parte de bla bla',
+      admin: {
+        email: 'henry.bravo89@gmail.com',
+        name: 'Henry'
+      },
+      users: [{
+            email: 'henry.bravo89@gmail.com',
+            name: 'Henry'
+          },
+          {
+            email: 'emai@email',
+            name: 'Jose'
+          }]
+    })
+  });
 
 Thing.find({}).remove()
   .then(() => {
     Thing.create({
-      name: 'Development Tools',
+      name: 'Test ',
       info: 'Integration with popular tools such as Bower, Grunt, Babel, Karma, ' +
              'Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, ' +
              'Stylus, Sass, and Less.'
     }, {
-      name: 'Server and Client integration',
+      name: 'Testtttt',
       info: 'Built with a powerful and fun stack: MongoDB, Express, ' +
              'AngularJS, and Node.'
     }, {
@@ -39,7 +77,9 @@ Thing.find({}).remove()
     });
   });
 
-User.find({}).remove()
+
+
+/*User.find({}).remove()
   .then(() => {
     User.create({
       provider: 'local',
@@ -56,4 +96,4 @@ User.find({}).remove()
     .then(() => {
       console.log('finished populating users');
     });
-  });
+  });*/

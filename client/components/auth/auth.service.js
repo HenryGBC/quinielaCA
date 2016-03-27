@@ -49,6 +49,8 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
       currentUser = {};
     },
 
+
+
     /**
      * Create a new user
      *
